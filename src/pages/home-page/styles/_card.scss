@@ -3,9 +3,10 @@
     border-radius: 16px;
     overflow: hidden;
     margin: min(5%);
+    background-color: var(--white-color);
     
     & &__content{
-        padding: 0 16px 24px 16px;        
+        padding: 40px 16px 24px 16px;        
     }    
 
     & &__image{        
@@ -19,7 +20,7 @@
         font-size: 24px;
         line-height: 33px;
         font-weight: 700;
-        margin-top: 40px;
+        margin-top: 0;
         margin-bottom: 16px;
     }
 
@@ -47,5 +48,41 @@
         line-height: 1.6em;
         letter-spacing: -0.01em;
         color: var(--title-color);
+    }
+}
+
+@media (min-width: 1024px){
+    .card{
+        max-width: 460px;    
+
+        & &__content{
+            padding: 32px 16px;        
+        }    
+
+        & &__image{        
+            height: 232px;
+            width: 100%; 
+            object-fit: cover;     
+        }
+
+        & &__title{
+            font-size: 32px;
+            line-height: 44px;
+        }
+
+        & &__description{
+            margin: 0 auto;
+            font-size: 16px;
+            max-width: 20em;
+        }
+
+        &__pricing{
+            margin: 40px 0 32px 0;
+        }
+
+        & &__link{
+            font-size: 16px;
+            line-height: 1.6em;
+        }
     }
 }
