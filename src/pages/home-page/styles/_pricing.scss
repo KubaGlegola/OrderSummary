@@ -45,6 +45,37 @@
     }
 }
 
+@media(max-width: 325px){
+    .pricing{
+        padding: 16px 16px 16px 12px;
+
+        & &__icon{
+            width: 16px;
+            height: 16px; 
+        }
+
+        & &__name-container{
+            padding-left: 16px;
+            margin-left: 12px;
+        }
+
+        & &__price{
+            font-size: 12px;
+            line-height: 1.4em;
+            
+        }
+
+        & &__name{
+            font-size: 14px;
+            line-height: 20px;            
+        }
+
+        & &__link{            
+            font-size: 12px;
+        }
+    }
+}
+
 @media(min-width: 1024px){
 
     .pricing-container{

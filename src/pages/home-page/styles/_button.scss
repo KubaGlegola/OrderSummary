@@ -15,9 +15,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all ease-in 0.2s;
 
     &:hover{
-        background-color: #490245;
-        transition: all ease-in 0.2s;
+        background-color: #490245;        
     }
 }
